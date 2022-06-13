@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>IS Store</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme  de e-commerce">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./front/css/style.css" rel="stylesheet" />
+    <link href="./front/css/accueil.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <div class="limitedWidthBlockContainer informations">
+        <div class="limitedWidthBlock">
+          <ul>
+            <li><img src="./front/images/icons/phone.svg" alt="logo de téléphone" class="informations__phone">+216 76 000 000</li>
+            <li><img src="./front//images/icons/mail.svg" alt="logo d'une enveloppe" class="informations__mail">give11@gmail.com</li>
+            <li><img src="./front//images/icons/adress.svg" alt="logo d'un point de géolocalisation" class="informations__address">Gafsa Tunisie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="limitedWidthBlockContainer menu">
+        <div class="limitedWidthBlock">
+          <a href="./front/html/index.html">
+            <img class="logo" src="./front/images/logo.jpg" alt="Logo de l'entreprise">
+          </a>
+          <nav>
+            <ul>
+              <a href="./index.html"><li>Accueil</li></a>
+              <li> <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <div id="id01" class="modal">
+  
+                  <form id="login-form" class="modal-content animate"  method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="./front/images/img_avatar2.png" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>E-mail</b></label>
+                      <input class="mail1" type="text" placeholder="Entrer votre mail" name="uname" required>
+                
+                      <label for="psw"><b>Mot de passe</b></label>
+                      <input type="password" placeholder="Entrer votre mot de passe" name="psw" required>
+                        
+                      <button type="submit" id="login-form-submit">Connecter</button>
+                      
+                      
+                      <p id="login-error-msg"></p>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Enregitrer mes données
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+                      <span class="psw"><a href="#">Mot de passe oublier?</a></span>
+                    </div>
+                  </form>
+                </div>    
+              </li>
+              <a href="./front/html/apropos1.html"><li>à propos</li></a>
+              <a href="./front/html/contact1.html"><li>Contactez-nous</li></a>
+              <a href="./front/html/inscrire.html"><li>inscrivez vous</li></a>
+
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      
+    </header>
+    <main class="limitedWidthBlockContainerAcceuil">
+      <div class="limitedWidthBlock">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./front/images/bc1.jpg" style="width:100%">
+            <div class="text">
+              <p>Vous voulez faire  </p>
+              <p>des tri dans vos </p>
+              <p> placards </p>
+              <a href="./front/html/comment.html" class="decouvrir"> Découvrir comment ça marche</a>
+              </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="./front/images/bc3.jpg" style="width:100%">
+          </div>
+          
+          
+          <div class="mySlides fade">
+            <img src="./front/images/bc2.jpg" style="width:100%">
+          </div>
+          
+          
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <h4 class="p1A">Notre site est un site de don et de vente en ligne sur toute la Tunisie, 
+            il permet de mettre en relation les clients et les vendeurs dans le but de réaliser 
+            des très bonnes affaires et pour aider les gents. Chez nous, vous trouver n’importe 
+            quel article et bénéficierez toujours les prix les plus bas, parmi nos produits. 
+            Nous permettons l'achat, la vente et le don en ligne de manière simple et pratique.
+            Nous assurons des transactions sécurisées et fiables. Aussi, nous simplifions le contact entre les donneurs et les associations.
+        </h4>
+        
+        <div class="row">
+          <div class="column">
+            <div class="card">
+             <img  src="./front/images/p1.jpg" alt="imageE">
+              <div class="prod">
+                <h2>Sac à main</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+             <img  src="./front/images/p2.jpg" alt="imageE">
+              <div class="prod">
+                <h2>Talon avec cienture</h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+             <img  src="./front/images/p3.jpg" alt="imageE">
+              <div class="prod">
+                <h2>Bague en or</h2>
+               
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+          <div class="column">
+           <div class="card">
+            <img  src="./front/images/p4.png" alt="imageE">
+             <div class="prod">
+               <h2>Monteau impermiable enfant</h2>
+              
+             </div>
+           </div>
+         </div>
+
+         <div class="column">
+          <div class="card">
+           <img  src="./front/images/p8.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Coffret de soin visage YverRocher</h2>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p6.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Combainison femme en jeans</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p14.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Caméra pro Canon</h2>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p9.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Parfum femme Miss Dior</h2>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p10.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Sandale pour les petite fille</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p11.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Parfum femme</h2>
+              
+            </div>
+          </div>
+        </div>
+      
+    
+       
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p12.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Espadrille homme</h2>
+             </div>
+            </div>
+          </div>
+        
+
+        <div class="column">
+          <div class="card">
+           <img  src="./front/images/p13.jpg" alt="imageE">
+            <div class="prod">
+              <h2>Rouge à levre YvesRocher</h2>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="w3-bar">
+          <a href="#" class="w3-button">«</a>
+          <a href="#" class="w3-button w3-green">1</a>
+          <a href="#" class="w3-button">2</a>
+          <a href="#" class="w3-button">3</a>
+          <a href="#" class="w3-button">4</a>
+          <a href="#" class="w3-button">»</a>
+        </div>
+
+
+  </div>  
+    </main>
+    
+        <footer>
+          <div class="limitedWidthBlockContainer footerMain">
+            <div class="limitedWidthBlock">
+              <div>
+                <img class="logo" src="./front/images/logo.jpg" alt="Logo de l'entreprise">
+              </div>
+              <div>
+                <p>Gafsa Tunisie </p>
+              </div>
+              <div>
+                <p>Téléphone : 01 23 45 67 89</p>
+              </div>
+              <div>
+                <p>Email : give11@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <script src="./front/js/accueil.js"></script>
+      </body>
+    </html>
+    

@@ -1,0 +1,898 @@
+      <!DOCTYPE html>
+      <html>
+      <title>Session Admin</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link href="../css/admin.css" rel="stylesheet" />
+      <body>
+              <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" >
+                <h1>IS Store</h1>
+                  <div class="w3-padding">Session Admin</div>
+                <img  src="../images/admin.jpg" class="w3-circle" >
+                <h5 class="w3-bar-item">Menu</h5>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Accueil')">Accueil</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Admin')">Gérer Admin</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Utilisateur')">Gérer Client</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Commande')">Gérer Commande</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Produit')">Gérer Produit</button>
+              </div>
+
+            <div class="ad">
+                
+              <div id="Accueil" class="w3-container tab" >
+                <div class="w3-padding"><h1>Résumer</h1></div>
+
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <h1>BIENVENUE ...!</h1>
+                      <img  src="../images/bienvenu.jpg" class="taswira">
+                        <div class="res">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="column">
+                      <div class="card">
+                          <h1>CATEGORIE</h1>
+                        <p class="title"> 6 CATEGORIES</p>
+                      <img  src="../images/categorie.jpg" class="taswira" >
+                        <div class="res">
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <h1>DON</h1>
+                        <p class="title">  50 DON PAR MOIS </p>
+                      <img  src="../images/don.jpg" class="taswira" >
+                        <div class="res">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                    <div class="card">
+                        <h1>VENTE</h1>
+                        <p class="title">  200 VENTE PAR SEMAINE </p>
+                      <img  src="../images/vente.jpg" class="taswira" >
+                      <div class="res">
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div> 
+              </div>
+
+
+
+
+
+              <div id="Admin" class="w3-container tab" >
+                <h2>Gérer Admin </h2>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'AjouterAdmin')">Ajouter Admin</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'ModifierAdmin')">Modifier Admin</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'SupprimerAdmin')">Supprimer Admin</button>
+              </div>
+
+              <div id="Utilisateur" class="w3-container tab" >
+                <h2>Gérer Client</h2>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'AjouterClient')">Ajouter Client</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'ModifierClient')">Modifier Client</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'SupprimerClient')">Supprimer Client</button>
+            
+            </div>
+
+
+              <div id="Commande" class="w3-container tab" >
+                <h2>Gérer Commande</h2>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'AjouterCommande')">Ajouter Commande</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'ModifierCommande')">Modifier Commande</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'SupprimerCommande')">Supprimer Commande</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'SupprimerCommande')">Afficher Commande</button>
+              </div>
+
+              <div id="Produit" class="w3-container tab" >
+                <h2>Gérer Produit</h2>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'AjouterProduit')">Ajouter Produit</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'ModifierProduit')">Modifier Produit</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'SupprimerProduit')">Supprimer Produit</button>
+              </div>
+              
+            
+
+
+            <div id="AjouterAdmin" class="w3-container tab" >
+            <p class="ajout">
+              Ajouter Admin
+            </p>
+            <div class="rowD">
+              <div class="colD-25">
+                  <label >Id</label>
+              </div>
+              <div class="colD-75">
+                  <input type="text" id="idAd" name="Id" required >
+              </div>
+              </div>
+              <div class="rowD">
+              <div class="colD-25">
+                  <label >Login</label>
+              </div>
+              <div class="colD-75">
+                  <input type="text" id="loginAd" name="login" required >
+              </div>
+              </div>
+                  <div class="rowD">
+              <div class="colD-25">
+                  <label >Mot de passe</label>
+              </div>
+              <div class="colD-75">
+                  <input type="text" id="pswAd" name="password" required>
+              </div>
+              </div>   
+              <div>
+                <input type="submit" id='env' value="Ajouter" >
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+            <div id="ModifierAdmin" class="w3-container tab" >
+              <p class="ajout">
+                Modifier Admin
+              </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idAd" name="Id" required >
+                </div>
+                </div>
+                <div class="rowD">
+                <div class="colD-25">
+                    <label >Login</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="loginAd" name="login" required >
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Mot de passe</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="pswAd" name="password" required>
+                </div>
+                </div>   
+                <div>
+                  <input type="submit" id='env' value="Modifier" >
+              </div>
+              </div>
+              </div>
+
+
+
+              <div id="SupprimerAdmin" class="w3-container tab" >
+                <p class="ajout">
+                  Supprimer Admin
+                </p>
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Id</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="idAd" name="Id" required >
+                  </div>
+                  </div>
+                  <div class="rowD">
+                  <div class="colD-25">
+                      <label >Login</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="loginAd" name="login" required >
+                  </div>
+                  </div>
+                      <div class="rowD">
+                  <div class="colD-25">
+                      <label >Mot de passe</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="pswAd" name="password" required>
+                  </div>
+                  </div>   
+                  <div>
+                    <input type="submit" id='env' value="Supprimer" >
+                </div>
+                </div>
+                </div>
+  
+  
+
+
+            <div id="AjouterClient" class="w3-container tab" >
+              <p class="ajout">
+                Ajouter Client
+              </p>
+
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idCl" name="Id" required >
+                </div>
+                </div>
+
+                <div class="rowD">
+                <div class="colD-25">
+                    <label >Nom</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="nomCl" name="nom" required >
+                </div>
+                </div>
+
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Prenom</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="prenomAd" name="prenom" required>
+                </div>
+                </div> 
+
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Mail</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="mailCl" name="mail" required>
+                  </div>
+                  </div> 
+
+                  <div class="rowD">
+                    <div class="colD-25">
+                        <label >Telephone</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="telCl" name="tel" required >
+                    </div>
+                    </div>
+  
+                        <div class="rowD">
+                    <div class="colD-25">
+                        <label >Adresse</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="adresseCl" name="Adresse" required>
+                    </div>
+                    </div> 
+
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Login</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="loginCl" name="login" required >
+                  </div>
+                  </div>
+
+                      <div class="rowD">
+                  <div class="colD-25">
+                      <label >Mot de passe</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="pswCl" name="password" required>
+                  </div>
+                  </div> 
+
+                <div>
+                  <input type="submit" id='env' value="Ajouter">
+              </div>
+              </div>
+              </div>
+
+
+
+
+              <div id="ModifierClient" class="w3-container tab" >
+                <p class="ajout">
+                  Modifier Client
+                </p>
+  
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Id</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="idCl" name="Id" required >
+                  </div>
+                  </div>
+  
+                  <div class="rowD">
+                  <div class="colD-25">
+                      <label >Nom</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="nomCl" name="nom" required >
+                  </div>
+                  </div>
+  
+                      <div class="rowD">
+                  <div class="colD-25">
+                      <label >Prenom</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="prenomAd" name="prenom" required>
+                  </div>
+                  </div> 
+  
+                  <div class="rowD">
+                    <div class="colD-25">
+                        <label >Mail</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="mailCl" name="mail" required>
+                    </div>
+                    </div> 
+  
+                    <div class="rowD">
+                      <div class="colD-25">
+                          <label >Telephone</label>
+                      </div>
+                      <div class="colD-75">
+                          <input type="text" id="telCl" name="tel" required >
+                      </div>
+                      </div>
+    
+                          <div class="rowD">
+                      <div class="colD-25">
+                          <label >Adresse</label>
+                      </div>
+                      <div class="colD-75">
+                          <input type="text" id="adresseCl" name="Adresse" required>
+                      </div>
+                      </div> 
+  
+                  <div class="rowD">
+                    <div class="colD-25">
+                        <label >Login</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="loginCl" name="login" required >
+                    </div>
+                    </div>
+  
+                        <div class="rowD">
+                    <div class="colD-25">
+                        <label >Mot de passe</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="pswCl" name="password" required>
+                    </div>
+                    </div> 
+  
+                  <div>
+                    <input type="submit" id='env' value="Modifier">
+                </div>
+                </div>
+                </div>
+  
+
+
+
+                <div id="SupprimerClient" class="w3-container tab" >
+                  <p class="ajout">
+                    Supprimer Client
+                  </p>
+    
+                  <div class="rowD">
+                    <div class="colD-25">
+                        <label >Id</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="idCl" name="Id" required >
+                    </div>
+                    </div>
+    
+                    <div class="rowD">
+                    <div class="colD-25">
+                        <label >Nom</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="nomCl" name="nom" required >
+                    </div>
+                    </div>
+    
+                        <div class="rowD">
+                    <div class="colD-25">
+                        <label >Prenom</label>
+                    </div>
+                    <div class="colD-75">
+                        <input type="text" id="prenomAd" name="prenom" required>
+                    </div>
+                    </div> 
+    
+                    <div class="rowD">
+                      <div class="colD-25">
+                          <label >Mail</label>
+                      </div>
+                      <div class="colD-75">
+                          <input type="text" id="mailCl" name="mail" required>
+                      </div>
+                      </div> 
+    
+                      <div class="rowD">
+                        <div class="colD-25">
+                            <label >Telephone</label>
+                        </div>
+                        <div class="colD-75">
+                            <input type="text" id="telCl" name="tel" required >
+                        </div>
+                        </div>
+      
+                            <div class="rowD">
+                        <div class="colD-25">
+                            <label >Adresse</label>
+                        </div>
+                        <div class="colD-75">
+                            <input type="text" id="adresseCl" name="Adresse" required>
+                        </div>
+                        </div> 
+    
+                    <div class="rowD">
+                      <div class="colD-25">
+                          <label >Login</label>
+                      </div>
+                      <div class="colD-75">
+                          <input type="text" id="loginCl" name="login" required >
+                      </div>
+                      </div>
+    
+                          <div class="rowD">
+                      <div class="colD-25">
+                          <label >Mot de passe</label>
+                      </div>
+                      <div class="colD-75">
+                          <input type="text" id="pswCl" name="password" required>
+                      </div>
+                      </div> 
+    
+                    <div>
+                      <input type="submit" id='env' value="Supprimer">
+                  </div>
+                  </div>
+                  </div>
+    
+  
+  
+  
+  
+  
+
+
+              <div id="AjouterCommande" class="w3-container tab" >
+                <p class="ajout">
+                  Ajouter Commande
+                </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idCom" name="Id" required>
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Prix</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="prixCom" name="prix" required>
+                </div> 
+                <div>
+                  <input type="submit" id='env' value="Ajouter">
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+              
+              <div id="ModifierCommande" class="w3-container tab" >
+                <p class="ajout">
+                  Modifier Commande
+                </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idCom" name="Id" required>
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Prix</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="prixCom" name="prix" required>
+                </div> 
+                <div>
+                  <input type="submit" id='env' value="Modifier">
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+              
+              <div id="SupprimerCommande" class="w3-container tab" >
+                <p class="ajout">
+                  Supprimer Commande
+                </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idCom" name="Id" required>
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Prix</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="prixCom" name="prix" required>
+                </div> 
+                <div>
+                  <input type="submit" id='env' value="Supprimer">
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+              <div id="AjouterProduit" class="w3-container tab" >
+                <p class="ajout">
+                  Ajouter Produit
+                </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idProd" name="id" required >
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Nom</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="nomProd" name="nom" required>
+                </div> 
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Quantité</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="quanProd" name="quantité" required >
+                  </div>
+                  </div>
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Prix</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="prixProd" name="prix" required>
+                  </div> 
+                <div>
+                  <input type="submit" id='env' value="Ajouter">
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+              <div id="ModifierProduit" class="w3-container tab" >
+                <p class="ajout">
+                  Modifier Produit
+                </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idProd" name="id" required >
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Nom</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="nomProd" name="nom" required>
+                </div> 
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Quantité</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="quanProd" name="quantité" required >
+                  </div>
+                  </div>
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Prix</label>
+                  </div>
+
+                 <div class="rowD">
+                  <div class="colD-25">
+                    <form >
+                      <label for="myfile">Image</label>
+                      <input type="file" id="myfile" name="myfile"><br><br>
+                      <input type="submit">
+                    </form>
+                  </div>
+
+                  <div class="colD-75">
+                      <input type="text" id="prixProd" name="prix" required>
+                  </div> 
+                <div>
+                  <input type="submit" id='env' value="Modifier">
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+
+
+
+              <div id="SupprimerProduit" class="w3-container tab" >
+                <p class="ajout">
+                  Supprimer Produit
+                </p>
+              <div class="rowD">
+                <div class="colD-25">
+                    <label >Id</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="idProd" name="id" required >
+                </div>
+                </div>
+                    <div class="rowD">
+                <div class="colD-25">
+                    <label >Nom</label>
+                </div>
+                <div class="colD-75">
+                    <input type="text" id="nomProd" name="nom" required>
+                </div> 
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Quantité</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="quanProd" name="quantité" required >
+                  </div>
+                  </div>
+                <div class="rowD">
+                  <div class="colD-25">
+                      <label >Prix</label>
+                  </div>
+                  <div class="colD-75">
+                      <input type="text" id="prixProd" name="prix" required>
+                  </div> 
+                <div>
+                  <input type="submit" id='env' value="Supprimer">
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+               
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <script src="../js/admin.js"></script>
+      </body>
+      </html>

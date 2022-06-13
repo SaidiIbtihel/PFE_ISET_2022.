@@ -1,0 +1,15 @@
+/* page apropos */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
+ /*apropos*/
+.apropos {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0px;
+}

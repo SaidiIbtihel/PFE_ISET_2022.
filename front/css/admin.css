@@ -1,0 +1,90 @@
+.w3-card{
+width: 170px;
+}
+
+.ad{
+    margin-left:170px;
+}
+.tab{
+    margin-left:170px;
+    display:none;
+} 
+.w3-circle{
+    width:70%;
+    margin-left: 25px;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin: 16px 70px;
+    padding: 2px  5px ;
+    
+  }
+  
+  
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .res {
+    padding: 0 16px;
+  }
+  
+  .res::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+    margin-left: 40%;
+  }
+ 
+
+.taswira{
+    width: 50%;
+    margin-left: 100px;
+    margin-right:0 ;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Ad{
+    margin-left: 110px;
+}
+.colD-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .colD-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  /* Clear floats after the columns */
+  .rowD:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #env{
+    background-color: rgb(180, 107, 107);
+    color: white;
+    padding: 12px ;
+    margin-left: 280px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 20%;
+  }
+  #env:hover {
+    background-color: rgb(159, 153, 153);
+  }
+  .ajout{
+      text-align: center;
+      font-size: 23px;
+  }

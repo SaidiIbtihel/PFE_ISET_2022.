@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title> a propos</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme  de e-commerce">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/apropos.css" rel="stylesheet" />
+    <link href="../css/accueil.css" rel="stylesheet" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <div class="limitedWidthBlockContainer informations">
+        <div class="limitedWidthBlock">
+          <ul>
+            <li><img src="../images/icons/phone.svg" alt="logo de téléphone" class="informations__phone">+216 76 000 000</li>
+            <li><img src="../images/icons/mail.svg" alt="logo d'une enveloppe" class="informations__mail">give11@gmail.com</li>
+            <li><img src="../images/icons/adress.svg" alt="logo d'un point de géolocalisation" class="informations__address">Gafsa Tunisie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="limitedWidthBlockContainer menu">
+        <div class="limitedWidthBlock">
+          
+            <img class="logo" src="../images/logo.jpg" alt="Logo de l'entreprise">
+          </a>
+          <nav>
+            <ul>
+                <a href="../../index.html"><li>Accueil</li></a>
+              <li> <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <div id="id01" class="modal">
+  
+                  <form id="login-form" class="modal-content animate"  method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="../images/img_avatar2.png" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>E-mail</b></label>
+                      <input class="mail1" type="text" placeholder="Entrer votre mail" name="uname" required>
+                
+                      <label for="psw"><b>Mot de passe</b></label>
+                      <input type="password" placeholder="Entrer votre mot de passe" name="psw" required>
+                        
+                      <button type="submit" id="login-form-submit">Connecter</button>
+                      <p id="login-error-msg"></p>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Enregitrer mes données
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+                      <span class="psw"><a href="#">Mot de passe oublier?</a></span>
+                    </div>
+                  </form>
+                </div>    
+              </li>
+              <a href="./apropos1.html"><li>à propos</li></a>
+              <a href="./contact1.html"><li>Contactez-nous</li></a>
+              
+              <a href="../html/inscrire.html"><li>inscrivez vous</li></a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+    </header>
+    <main>
+
+      <div class="about-section">
+          <img class="apropos" src="../images/about.jpg" >
+          <h1>A-propos notre site</h1>
+          <p>Tu ne le portes pas ? 
+             La seconde-main, c’est l’avenir . Sur notre site,
+             tu donne et vends  les vêtements qui ont encore des choses à vivre et tu déniches 
+             des merveilles que tu ne trouves pas en boutique. Chez nous, vous trouver n’importe quel article 
+             et bénéficierez toujours les prix les plus bas, parmi nos produits. Grace a vos dons nous aidons
+             les indigents et les orphelin en communiquant les associations </p>
+      </div>
+  </main>
+  <footer>
+    <div class="limitedWidthBlockContainer footerMain">
+      <div class="limitedWidthBlock">
+        <div>
+          <img class="logo" src="../images/logo.jpg" alt="Logo de l'entreprise">
+        </div>
+        <div>
+          <p>Gafsa , Tunisie</p>
+        </div>
+        <div>
+          <p>Téléphone : +216 76 000 000</p>
+        </div>
+        <div>
+          <p>Email : @name.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="limitedWidthBlockContainer footerSecondary">
+      <div class="limitedWidthBlock">
+        <p>© Copyright 2021 - 2042 | Openclassrooms by Openclassrooms | All Rights Reserved | Powered by <3</p>
+      </div>
+    </div>
+  </footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

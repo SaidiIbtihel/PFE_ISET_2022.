@@ -1,0 +1,22 @@
+{
+  "name": "pfe",
+  "version": "1.0.0",
+  "description": "This is the front end and back end server for Project 5 of the Web Developer path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaidiIbtihel/PFE_ISET_2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaidiIbtihel/PFE_ISET_2022/issues"
+  },
+  "homepage": "https://github.com/SaidiIbtihel/PFE_ISET_2022#readme",
+  "dependencies": {
+    "npm-cli": "^0.1.0"
+  }
+}

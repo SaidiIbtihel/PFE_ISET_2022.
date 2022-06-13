@@ -1,0 +1,41 @@
+/* nv Compte */
+.input-inscri {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left:550px;
+    
+    
+  }
+   .nc {
+      background-color: rgb(180, 107, 107);
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
+      width: 25%;
+      margin-left: 35%;
+      margin-right:30%;
+   }
+   .nc:hover {
+    background-color: rgb(159, 153, 153);
+  }
+  .NC{
+    position: relative;
+    border-radius: 5px;
+    padding: 20px 0 30px 0;
+    background-color: #f2f2f2;
+  }
+  .inscrire{
+    margin-bottom: 10px;
+    margin-left:100px;
+  }
+ h1{
+  color: black;
+  margin-left: -20%;
+ } h6 {
+  color: black;
+   margin-left: 35%;
+ }
+ 
