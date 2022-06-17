@@ -100,7 +100,7 @@ logoutButton.addEventListener("click", function (e) {
 var inscrireButton = document.getElementById("inscrire-form-submit");
 logoutButton.addEventListener("click", function (e) {
   e.preventDefault();
-  window.open("./index.html");
+  window.open("./inscrire.html");
 });
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -137,3 +137,47 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function ValidationForm() {
+  var prenom = document.forms["don"]["prenom"];
+  var nom = document.forms["don"]["nom"];
+  var email = document.forms["don"]["email"];
+  var montant = document.forms["don"]["montant"];
+  var numCarte = document.forms["don"]["numCarte"];
+
+  if (nom.value == "") {
+    alert("Ajouter votre nom.");
+    nom.focus();
+    return false;
+  }
+
+  if (prenom.value == "") {
+    alert("Ajouter votre prenom.");
+    email.focus();
+    return false;
+  }
+
+  if (email.value.indexOf("@", 0) < 0) {
+    alert("Ajouter une adresse mail valide.");
+    email.focus();
+    return false;
+  }
+
+  if (montant.value.indexOf(".", 0) < 0) {
+    alert("Ajouter le montant à donner.");
+    montant.focus();
+    return false;
+  }
+
+  if (numCarte.value == "") {
+    alert("Ajouter le num de carte.");
+    numCarte.focus();
+    return false;
+  } else return true;
+}
+
+var confirmerButton = document.getElementById("don");
+logoutButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.open("./index.html");
+});
